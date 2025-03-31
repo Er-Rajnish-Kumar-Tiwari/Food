@@ -9,7 +9,7 @@ const MenuList = () => {
 
   const displayList = async () => {
     try {
-      const response = await axios.get("http://localhost:2000/displayMenu");
+      const response = await axios.get("https://food-backend-7lkf.onrender.com/displayMenu");
       if (response.status === 200) {
         setList(response.data.menuItems);
       } else {
@@ -22,7 +22,7 @@ const MenuList = () => {
 
   const deleteItems = async (did) => {
     try {
-      const response = await axios.delete(`http://localhost:2000/deleteMenu/${did}`);
+      const response = await axios.delete(`https://food-backend-7lkf.onrender.com/deleteMenu/${did}`);
       if (response.status === 200) {
         toast.success("Menu item deleted successfully!");
         await displayList(); // Refresh the list after deletion
@@ -55,7 +55,7 @@ const MenuList = () => {
             <div key={items._id} className="menu-table-format">
               <p>{index + 1}</p>
               <img 
-                src={`http://localhost:2000/menuImage/${items.menu_image}`} 
+                src={`https://food-backend-7lkf.onrender.com/menuImage/${items.menu_image}`} 
                 alt={`${items.menu_name} image`} 
               />
               <p>{items.menu_name}</p>
