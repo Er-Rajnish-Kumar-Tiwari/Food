@@ -1,0 +1,42 @@
+.placeorder{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.placeorder-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+
+.placeorder-left .placeorder-title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.placeorder-left input{
+    width: 100%;
+    border: 1px solid #c5c5c5;
+    border-radius: 8px;
+    outline-color: tomato;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.placeorder-left .multi-flieds{
+    display: flex;
+    gap: 10px;
+}
+
+.placeorder-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+
+.cart-total h2{
+    margin-bottom: 30px;
+}

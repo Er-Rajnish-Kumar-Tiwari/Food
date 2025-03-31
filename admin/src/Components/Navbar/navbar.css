@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.navbar .logo{
+    width: max(10%,80px);
+}
+
+.navbar .profile-logo{
+    width: 40px;
+}
+
+h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+@media (max-width:499px) {
+    h1{
+        display: none;
+    }
+}
