@@ -51,7 +51,7 @@ const Placeorder = () => {
       amount: getTotalAmount() + 45,
     }
 
-    await axios.post("http://localhost:2000/orderPlace", orderData, { headers: { token } });
+    await axios.post("https://food-backend-7lkf.onrender.com/orderPlace", orderData, { headers: { token } });
     toast.success("Order placed successfully!");
     setData({
       firstName: "",
@@ -68,7 +68,7 @@ const Placeorder = () => {
 
   const paymentHandler = async (event) => {
 
-    const response = await axios.post("http://localhost:2000/payments", {
+    const response = await axios.post("https://food-backend-7lkf.onrender.com/payments", {
       amount: amount,
       currency: currency,
       receipt: receiptId,
@@ -95,7 +95,7 @@ const Placeorder = () => {
           ...response,
         };
 
-        const validatres=await fetch("http://localhost:2000/validate",{
+        const validatres=await fetch("https://food-backend-7lkf.onrender.com/validate",{
           method:"POST",
           body:JSON.stringify(body),
 
