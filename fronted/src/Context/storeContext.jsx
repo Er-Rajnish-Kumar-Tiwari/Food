@@ -34,7 +34,7 @@ const StoreContextProvider = (props) => {
 
     if (token) {
       await axios.post(
-        "http://localhost:2000/addToCart",
+        "https://food-backend-7lkf.onrender.com/addToCart",
         { iteamId },
         { headers: { token } }
       );
@@ -54,7 +54,7 @@ const StoreContextProvider = (props) => {
 
     if (token) {
       await axios.post(
-        "http://localhost:2000/removeFromCart",
+        "https://food-backend-7lkf.onrender.com/removeFromCart",
         { iteamId },
         { headers: { token } }
       );
@@ -63,7 +63,7 @@ const StoreContextProvider = (props) => {
 
   const fetchFoodList = async () => {
     try {
-      const response = await axios.get("http://localhost:2000/display");
+      const response = await axios.get("https://food-backend-7lkf.onrender.com/display");
       setFoodList(response.data.foodItems);
     } catch (error) {
       console.error("Error fetching food list:", error);
@@ -74,7 +74,7 @@ const StoreContextProvider = (props) => {
     if (!token) return;
     try {
       const response = await axios.post(
-        "http://localhost:2000/fetchCart",
+        "https://food-backend-7lkf.onrender.com/fetchCart",
         {},
         { headers: { token } }
       );
@@ -93,7 +93,7 @@ const StoreContextProvider = (props) => {
   };
 
   const fetchMenuItem = async () => {
-    const response = await axios.get("http://localhost:2000/displayMenu");
+    const response = await axios.get("https://food-backend-7lkf.onrender.com/displayMenu");
     setMenuList(response.data.menuItems);
   };
 

@@ -23,7 +23,7 @@ const Menu = () => {
     formData.append('menu_image', menu_image);
 
     try {
-      const response = await axios.post('http://localhost:2000/insertMenu', formData);
+      const response = await axios.post('https://food-backend-7lkf.onrender.com/insertMenu', formData);
 
       if (response) {
         setInformation([...information, { menu_name }]);

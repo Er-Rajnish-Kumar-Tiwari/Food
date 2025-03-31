@@ -9,7 +9,7 @@ const Orders = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get("http://localhost:2000/ordersList");
+      const response = await axios.get("https://food-backend-7lkf.onrender.com/ordersList");
       setData(response.data.data);
       console.log(response.data.data);
     } catch (error) {
@@ -19,7 +19,7 @@ const Orders = () => {
 
   const stateHandler = async (event, orderId) => {
     try {
-      const response = await axios.post("http://localhost:2000/orderstatus", {
+      const response = await axios.post("https://food-backend-7lkf.onrender.com/orderstatus", {
         orderId,
         status: event.target.value
       });

@@ -30,7 +30,7 @@ const Cart = ({ setShowLogin }) => {
             return (
               <div key={index}>
                 <div className='cart-iteam-title cart-iteams'>
-                  <img src={`http://localhost:2000/images/${iteam.image}`} alt='' />
+                  <img src={`https://food-backend-7lkf.onrender.com/images/${iteam.image}`} alt='' />
                   <p>{iteam.name}</p>
                   <p>Rs.{iteam.price}</p>
                   <p>{cartIteam[iteam._id]}</p>

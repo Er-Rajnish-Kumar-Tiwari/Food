@@ -8,7 +8,7 @@ const FoodList = () => {
   const [foodlist, setList] = useState([]);
 
   const displayList = async () => {
-    const response = await axios.get("http://localhost:2000/display");
+    const response = await axios.get("https://food-backend-7lkf.onrender.com/display");
 
     if (response) {
       console.log(response.data);
@@ -20,7 +20,7 @@ const FoodList = () => {
   };
 
   const deleteItems=async(did)=>{
-    const response=await axios.delete(`http://localhost:2000/delete/${did}`);
+    const response=await axios.delete(`https://food-backend-7lkf.onrender.com/delete/${did}`);
     if(response){
       await displayList();
       toast.success("Food-Item deleted successfully!");
@@ -55,7 +55,7 @@ const FoodList = () => {
             <div key={index} className="list-table-format">
 
               <p>{index+1}</p>
-              <img src={`http://localhost:2000/images/${items.image}`} />
+              <img src={`https://food-backend-7lkf.onrender.com/images/${items.image}`} />
               <p>{items.name}</p>
               <p>{items.category}</p>
               <p>{items.price}</p>

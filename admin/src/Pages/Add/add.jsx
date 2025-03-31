@@ -27,7 +27,7 @@ const Add = () => {
     formData.append('category', category);
     formData.append('image', image); 
   
-      const response = await axios.post('http://localhost:2000/insert', formData);
+      const response = await axios.post('https://food-backend-7lkf.onrender.com/insert', formData);
   
       if (response) {
         setInformation([...information, { name, description, price, category }]);
