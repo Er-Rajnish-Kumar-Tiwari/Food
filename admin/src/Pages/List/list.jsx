@@ -55,7 +55,7 @@ const FoodList = () => {
             <div key={index} className="list-table-format">
 
               <p>{index+1}</p>
-              <img src={`http://localhost:2000/images/${items.image}`} />
+              <img src={`https://food-backend-7lkf.onrender.com/images/${items.image}`} />
               <p>{items.name}</p>
               <p>{items.category}</p>
               <p>{items.price}</p>
