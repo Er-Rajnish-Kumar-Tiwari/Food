@@ -10,7 +10,7 @@ const MyOrders = () => {
     const [data, setData] = useState([]);
 
     const fetchOrders = async () => {
-        const response = await axios.post("http://localhost:2000/orders", {}, { headers: { token } });
+        const response = await axios.post("https://food-backend-7lkf.onrender.com/orders", {}, { headers: { token } });
         setData(response.data.data);
         
     };
