@@ -15,7 +15,7 @@ const Explore = ({catogery,setCatogery}) => {
                 return(
 
                     <div onClick={()=>setCatogery(prev=>prev===iteam.menu_name?"All":iteam.menu_name)} key={index} className="explore-menu-list-iteam">
-                        <img className={catogery===iteam.menu_name?"active":""} src={`http://localhost:2000/menuImage/${iteam.menu_image}`} alt='menu-img'></img>
+                        <img className={catogery===iteam.menu_name?"active":""} src={`https://food-backend-7lkf.onrender.com/menuImage/${iteam.menu_image}`} alt='menu-img'></img>
                         <p>{iteam.menu_name}</p>
                     </div>
 
