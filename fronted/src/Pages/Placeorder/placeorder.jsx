@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import './Placeorder.css'
+import './placeorder.css'
 import { StoreContext } from '../../Context/storeContext'
 import axios from 'axios';
 import { toast } from 'react-toastify';
