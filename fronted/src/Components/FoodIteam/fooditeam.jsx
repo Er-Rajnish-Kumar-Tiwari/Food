@@ -15,7 +15,7 @@ const FoodIteam = ({ iteamId, price, description, name, image }) => {
         return (
             <div className='food-iteam'>
                 <div className="food-iteam-img-container">
-                    <img className='food-image' src={`http://localhost:2000/images/${image}`} alt='food-image' />
+                    <img className='food-image' src={`https://food-backend-7lkf.onrender.com/images/${image}`} alt='food-image' />
 
                     {itemCount === 0 ? (
                         <img onClick={() => addToCart(iteamId)} className='add' src={assets.add_icon_white} alt='add' />
@@ -50,7 +50,7 @@ const FoodIteam = ({ iteamId, price, description, name, image }) => {
                 return (
                     <div className='food-iteam' key={_id}>
                         <div className="food-iteam-img-container">
-                            <img className='food-image' src={`http://localhost:2000/images/${image}`} alt='food-image' />
+                            <img className='food-image' src={`https://food-backend-7lkf.onrender.com/${image}`} alt='food-image' />
 
                             {itemCount === 0 ? (
                                 <img onClick={() => addToCart(_id)} className='add' src={assets.add_icon_white} alt='add' />
