@@ -32,9 +32,9 @@ const Login = ({ setShowLogin }) => {
         let url = "";
 
         if (currentState === 'Login') {
-            url = "http://localhost:2000/login";
+            url = "https://food-backend-7lkf.onrender.com/login";
         } else {
-            url = "http://localhost:2000/register";
+            url = "https://food-backend-7lkf.onrender.com/register";
         }
 
         try {
