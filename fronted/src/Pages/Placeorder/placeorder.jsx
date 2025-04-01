@@ -111,7 +111,7 @@ const Placeorder = () => {
       "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
         "name": "Tanish", //your customer's name
         "email": "tanish281202@gmail.com",
-        "contact": "9000090000"  //Provide the customer's phone number for better conversion rates 
+        "contact": "9572973654"  //Provide the customer's phone number for better conversion rates 
       },
       "notes": {
         "address": "Razorpay Corporate Office"
