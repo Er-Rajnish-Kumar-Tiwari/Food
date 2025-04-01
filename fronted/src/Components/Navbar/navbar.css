@@ -144,13 +144,9 @@
 }
 
 
-@media (max-width:900px){
+@media (max-width:1300px){
     .Navbar .logo{
         width: 120px;
-    }
-    .Navbar-menu{
-        gap: 15px;
-        font-size: 16px;
     }
     .Navbar-right{
         gap: 20px;
@@ -163,13 +159,13 @@
         padding: 7px 20px;
         font-size: 15px;
     }
+    .Navbar-menu{
+        display: none;
+    }
 }
 
 
 @media (max-width:750px){
-    .Navbar-menu{
-        display: none;
-    }
     .fsearch{
         width: 150px;
         font-size: 10px;
