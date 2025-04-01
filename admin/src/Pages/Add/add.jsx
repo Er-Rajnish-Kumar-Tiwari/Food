@@ -102,6 +102,7 @@ const Add = () => {
               <option value='Pure Veg'>Pure Veg</option>
               <option value='Pasta'>Pasta</option>
               <option value='Noodles'>Noodles</option>
+              <option value='Noodles'>Non Veg</option>
             </select>
           </div>
 
